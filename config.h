@@ -83,9 +83,11 @@ static const char *dmenucmd[] = {"dmenu_run",   "-m",  dmenumon,      "-fn",
 static const char *termcmd[] = {"kitty", NULL};
 static const char *fmcmd[] = {"thunar", NULL};
 static const char *webcmd[] = {"chromium", NULL};
+static const char *flameshot [] = {"flameshot", "gui"};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
+    {MODKEY | ShiftMask, XK_s, spawn, {.v = flameshot}},
     {MODKEY, XK_d, spawn, {.v = dmenucmd}},
     {MODKEY, XK_e, spawn, {.v = fmcmd}},
     {MODKEY, XK_w, spawn, {.v = webcmd}},
