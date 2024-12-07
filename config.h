@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx = 2; /* border pixel of windows */
+static const unsigned int borderpx = 4; /* border pixel of windows */
 static const unsigned int snap = 32;    /* snap pixel */
 static const int showbar = 1;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
@@ -17,13 +17,13 @@ static const char dmenufont[] = "FiraCode Nerd Font:size=10";
 /*	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },*/
 /*};*/
 
-static const char col_nordfg[] = "#434C5E";
-static const char col_nordbg[] = "#D8DEE9";
-static const char col_nordborder[] = "#D8DEE9";
+static const char col_nordfg[] = "#d8dee9";
+static const char col_nordbg[] = "#4c566a";
+static const char col_nordborder[] = "#4c566a";
 
-static const char col_nordfgSel[] = "#434C5E";
-static const char col_nordbgSel[] = "#88C0D0";
-static const char col_nordborderSel[] = "#88C0D0";
+static const char col_nordfgSel[] = "#d8dee9";
+static const char col_nordbgSel[] = "#2e3440";
+static const char col_nordborderSel[] = "#2e3440";
 
 static const char *colors[][3] = {
     /*               fg         bg         border    */
@@ -83,11 +83,11 @@ static const char *dmenucmd[] = {"dmenu_run",   "-m",  dmenumon,      "-fn",
 static const char *termcmd[] = {"kitty", NULL};
 static const char *fmcmd[] = {"thunar", NULL};
 static const char *webcmd[] = {"chromium", NULL};
-static const char *flameshot [] = {"flameshot", "gui"};
+static const char *flameshotcmd[] = {"flameshot", "gui", NULL};
 
 static const Key keys[] = {
     /* modifier                     key        function        argument */
-    {MODKEY | ShiftMask, XK_s, spawn, {.v = flameshot}},
+    {MODKEY, XK_s, spawn, {.v = flameshotcmd}},
     {MODKEY, XK_d, spawn, {.v = dmenucmd}},
     {MODKEY, XK_e, spawn, {.v = fmcmd}},
     {MODKEY, XK_w, spawn, {.v = webcmd}},
