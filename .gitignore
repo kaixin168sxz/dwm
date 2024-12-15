@@ -1,2 +1,4 @@
 dwm
 dwm.o
+util.o
+drw.o
