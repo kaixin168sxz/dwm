@@ -5,8 +5,8 @@ static const unsigned int borderpx = 4; /* border pixel of windows */
 static const unsigned int snap = 32;    /* snap pixel */
 static const int showbar = 1;           /* 0 means no bar */
 static const int topbar = 1;            /* 0 means bottom bar */
-static const char *fonts[] = {"FiraCode Nerd Font:size=10"};
-static const char dmenufont[] = "FiraCode Nerd Font:size=10";
+static const char *fonts[] = {"Source Han Sans CN:size=10"};
+static const char dmenufont[] = "Source Han Sans CN:size=10";
 /*static const char col_gray1[]       = "#222222";*/
 /*static const char col_gray2[]       = "#444444";*/
 /*static const char col_gray3[]       = "#bbbbbb";*/
@@ -19,11 +19,11 @@ static const char dmenufont[] = "FiraCode Nerd Font:size=10";
 
 static const char col_nordfg[] = "#d8dee9";
 static const char col_nordbg[] = "#4c566a";
-static const char col_nordborder[] = "#4c566a";
+static const char col_nordborder[] = "#2e3440";
 
 static const char col_nordfgSel[] = "#d8dee9";
 static const char col_nordbgSel[] = "#2e3440";
-static const char col_nordborderSel[] = "#2e3440";
+static const char col_nordborderSel[] = "#4c566a";
 
 static const char *colors[][3] = {
     /*               fg         bg         border    */
