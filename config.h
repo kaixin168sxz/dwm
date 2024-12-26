@@ -79,7 +79,7 @@ static const char *dmenucmd[] = {"dmenu_run",   "-m",  dmenumon,      "-fn",
                                  col_nordfgSel, NULL};
 static const char *termcmd[] = {"kitty", NULL};
 static const char *fmcmd[] = {"thunar", NULL};
-static const char *webcmd[] = {"proxy_chromium", NULL};
+static const char *webcmd[] = {"chromium", NULL};
 static const char *flameshotcmd[] = {"flameshot", "gui", NULL};
 
 static const Key keys[] = {
