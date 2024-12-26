@@ -24,10 +24,7 @@ static const char col_nordborder[] = "#2e3440";
 static const char col_nordfgSel[] = "#d8dee9";
 static const char col_nordbgSel[] = "#2e3440";
 static const char col_nordborderSel[] = "#4c566a";
-
-static const char *colors[][3] = {
-    /*               fg         bg         border    */
-    [SchemeNorm] = {col_nordfg, col_nordbg, col_nordborder},
+static const char *colors[][3] = { /*               fg         bg         border    */ [SchemeNorm] = {col_nordfg, col_nordbg, col_nordborder},
     [SchemeSel] = {col_nordfgSel, col_nordbgSel, col_nordborderSel},
 };
 
@@ -82,7 +79,7 @@ static const char *dmenucmd[] = {"dmenu_run",   "-m",  dmenumon,      "-fn",
                                  col_nordfgSel, NULL};
 static const char *termcmd[] = {"kitty", NULL};
 static const char *fmcmd[] = {"thunar", NULL};
-static const char *webcmd[] = {"chromium", NULL};
+static const char *webcmd[] = {"proxy_chromium", NULL};
 static const char *flameshotcmd[] = {"flameshot", "gui", NULL};
 
 static const Key keys[] = {
