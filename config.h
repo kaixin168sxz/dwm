@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+#include <X11/X.h>
 static const unsigned int borderpx = 4; /* border pixel of windows */
 static const unsigned int snap = 32;    /* snap pixel */
 static const int showbar = 1;           /* 0 means no bar */
@@ -80,6 +81,7 @@ static const char *dmenucmd[] = {"dmenu_run",   "-m",  dmenumon,      "-fn",
 static const char *termcmd[] = {"kitty", NULL};
 static const char *fmcmd[] = {"thunar", NULL};
 static const char *webcmd[] = {"chromium", NULL};
+static const char *webcmdProxy[] = {"/home/kaixin/shell/proxy_chromium.sh", NULL};
 static const char *flameshotcmd[] = {"flameshot", "gui", NULL};
 
 static const Key keys[] = {
@@ -87,7 +89,8 @@ static const Key keys[] = {
     {MODKEY, XK_s, spawn, {.v = flameshotcmd}},
     {MODKEY, XK_d, spawn, {.v = dmenucmd}},
     {MODKEY, XK_e, spawn, {.v = fmcmd}},
-    {MODKEY, XK_w, spawn, {.v = webcmd}},
+    {MODKEY, XK_w, spawn, {.v = webcmdProxy}},
+    {MODKEY | ShiftMask, XK_w, spawn, {.v = webcmd}},
     {MODKEY, XK_q, spawn, {.v = termcmd}},
     {MODKEY, XK_b, togglebar, {0}},
     {MODKEY, XK_j, focusstack, {.i = +1}},
