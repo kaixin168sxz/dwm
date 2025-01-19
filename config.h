@@ -79,6 +79,7 @@ static const char *dmenucmd[] = {"dmenu_run",   "-m",  dmenumon,      "-fn",
                                  col_nordfg,    "-sb", col_nordbgSel, "-sf",
                                  col_nordfgSel, NULL};
 static const char *termcmd[] = {"kitty", NULL};
+static const char *runnercmd[] = {"/home/kaixin/python/Runner/main.py", NULL};
 static const char *fmcmd[] = {"thunar", NULL};
 static const char *webcmd[] = {"chromium", NULL};
 static const char *webcmdProxy[] = {"/home/kaixin/shell/proxy_chromium.sh", NULL};
@@ -88,6 +89,7 @@ static const Key keys[] = {
     /* modifier                     key        function        argument */
     {MODKEY, XK_s, spawn, {.v = flameshotcmd}},
     {MODKEY, XK_d, spawn, {.v = dmenucmd}},
+    {MODKEY | ShiftMask, XK_d, spawn, {.v = runnercmd}},
     {MODKEY, XK_e, spawn, {.v = fmcmd}},
     {MODKEY, XK_w, spawn, {.v = webcmdProxy}},
     {MODKEY | ShiftMask, XK_w, spawn, {.v = webcmd}},
